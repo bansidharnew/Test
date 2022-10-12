@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 0 !important;
+}
+body {
+  background-color: black !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+body.disable-scroll {
+  overflow: hidden;
+}
+.scroll-icon {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: -35px;
+  color: gray;
+  animation: MoveUpDown 1s linear infinite;
+}
+.scroll-icon i:hover {
+  color: goldenrod;
+}
+.nineth-arrow {
+  margin-top: -50px;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+.snap-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overscroll-behavior: contain ; /* Prevent SCROLL-CHAINING to parent elements. */
+  scroll-snap-type: y mandatory !important; /* Chrome Canary */
+  scroll-snap-type: mandatory !important; /* Firefox */
+  -ms-scroll-snap-type: mandatory !important; /* IE/Edge */
+  -webkit-scroll-snap-type: mandatory !important; /* Safari */
+  -webkit-scroll-snap-destination: 0% 0% !important;
+  -webkit-overflow-scrolling: touch !important; /* important for iOS */
+}
+.snap-container::-webkit-scrollbar {
+  width: 5px;
+}
+.snap-container::-webkit-scrollbar-thumb {
+  background: rgb(7, 100, 206);
+}
+.snap-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(226, 38, 5);
+}
+.snap{
+  scroll-snap-align: start !important; /* latest (Chrome 69+) */
+  scroll-snap-coordinate: 0% 0% !important; /* older (Firefox/IE) */
+  -webkit-scroll-snap-coordinate: 0% 0% !important; /* older (Safari) */
+}

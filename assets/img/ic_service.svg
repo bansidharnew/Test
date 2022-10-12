@@ -1,0 +1,10 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29 20H17V32H29V20Z" stroke="#FF4C4C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M73 64H61V76H73V64Z" stroke="#FF4C4C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55 70H35C31.8174 70 28.7652 68.7357 26.5147 66.4853C24.2643 64.2348 23 61.1826 23 58V38" stroke="#5D5D63" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35 26H55C58.1826 26 61.2348 27.2643 63.4853 29.5147C65.7357 31.7652 67 34.8174 67 38V58" stroke="#5D5D63" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35 25H23V37H35V25Z" fill="#000001" fill-opacity="0.1"/>
+<path d="M79 69H67V81H79V69Z" fill="#000001" fill-opacity="0.1"/>
+<path d="M61 75H41C37.8174 75 34.7652 73.7357 32.5147 71.4853C30.2643 69.2348 29 66.1826 29 63V43" fill="#000001" fill-opacity="0.1"/>
+<path d="M41 31H61C64.1826 31 67.2348 32.2643 69.4853 34.5147C71.7357 36.7652 73 39.8174 73 43V63" fill="#000001" fill-opacity="0.1"/>
+</svg>

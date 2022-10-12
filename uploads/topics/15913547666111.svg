@@ -1,0 +1,12 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 79C43.9276 77.7933 49.9521 77.1239 56 77C62.0479 77.1239 68.0724 77.7933 74 79" fill="#000001" fill-opacity="0.1"/>
+<path d="M86 25H26V69H86V25Z" fill="#000001" fill-opacity="0.1"/>
+<path d="M32 74C37.9276 72.7933 43.9521 72.1239 50 72C56.0479 72.1239 62.0724 72.7933 68 74" stroke="#FF4C4C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50 64V72" stroke="#FF4C4C" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M80 20H20V64H80V20Z" stroke="#5D5D63" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 55H80" stroke="#5D5D63" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41.5 41.9998C40.672 41.9998 40 41.3278 40 40.4998V35.4998C40 34.6718 40.672 33.9998 41.5 33.9998C42.328 33.9998 43 34.6718 43 35.4998V40.4998C43 41.3278 42.328 41.9998 41.5 41.9998Z" fill="#FF4C4C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M58.5 41.9998C57.672 41.9998 57 41.3278 57 40.4998V35.4998C57 34.6718 57.672 33.9998 58.5 33.9998C59.328 33.9998 60 34.6718 60 35.4998V40.4998C60 41.3278 59.328 41.9998 58.5 41.9998Z" fill="#FF4C4C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M44 33.9998V44.9998C44 45.5518 44.448 45.9998 45 45.9998H46V48.4998C46 49.3278 46.672 49.9998 47.5 49.9998C48.328 49.9998 49 49.3278 49 48.4998V45.9998H51V48.4998C51 49.3278 51.672 49.9998 52.5 49.9998C53.328 49.9998 54 49.3278 54 48.4998V45.9998H55C55.552 45.9998 56 45.5518 56 44.9998V33.9998H44Z" fill="#FF4C4C"/>
+<path d="M44 32.9997H56C56 31.3247 55.313 29.8127 54.206 28.7237L55.8 26.5987C56.132 26.1577 56.042 25.5307 55.6 25.1997C55.157 24.8687 54.531 24.9587 54.2 25.3997L52.564 27.5807C51.786 27.2117 50.919 26.9997 50 26.9997C49.081 26.9997 48.214 27.2127 47.436 27.5817L45.8 25.3997C45.469 24.9587 44.843 24.8687 44.4 25.1997C43.958 25.5307 43.869 26.1577 44.2 26.5987L45.794 28.7237C44.688 29.8117 44 31.3247 44 32.9997Z" fill="#FF4C4C"/>
+</svg>
