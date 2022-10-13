@@ -689,7 +689,7 @@ h1.fadeInInitial span:nth-of-type(5){
   transition: 3s;
   z-index: 1; 
   background: linear-gradient(to bottom, transparent 75%, rgb(0, 0, 0)),
-    url("starsPhoto6.jpeg") no-repeat center center fixed;
+    url("starsPhoto6.webp") no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
   /*margin-top: -80px;*/
