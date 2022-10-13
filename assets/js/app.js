@@ -100,7 +100,7 @@ setTimeout(() => {
   }, 2000);*/
 }, 15000)
 
-alert('01')
+// alert('01')
 jQuery(document).ready(function ($) {
   //alert(document.body.clientWidth);
 
@@ -164,15 +164,15 @@ $(document).ready(function () {
   // $(".valere").css("display", "none");
 })
 setTimeout(function () {
-  alert('02')
+  // alert('02')
   $('#ctn-preloader').addClass('loaded')
   // Una vez haya terminado el preloader aparezca el scroll
-  alert('03')
+  // alert('03')
   $('body').removeClass('no-scroll-y')
-  alert('04')
+  // alert('04')
 
   if ($('#ctn-preloader').hasClass('loaded')) {
-    alert('0')
+    // alert('50')
     // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
     $('#preloader')
       .delay(1000)
