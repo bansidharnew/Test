@@ -30,10 +30,10 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </head>
-<body class="valere_body" style="overflow: hidden; height: 100%;">
+<body class="valere_body">
 
     <!-- --------------------------preloader start------------------- -->
-<!-- <div class="no-scroll-y">
+<div class="no-scroll-y">
    <section>
       <div id="preloader">
          <div id="ctn-preloader" class="ctn-preloader">
@@ -49,7 +49,7 @@
          </div>
       </div>
    </section>
-</div> -->
+</div>
 <!-- --------------------------preloader end------------------- -->
 <!-- ----------------------main wrapper start------------------- -->
 <div class="wrapper active-page1 active-panel" id="fullpage">
@@ -262,7 +262,7 @@
                <h1 class="text-center">
                   The Universe Speaks
                </h1>
-               <img src="uploads/imgs/awards.wenp" alt="awards">
+               <img src="uploads/imgs/awards.png">
             </div>
          </div>
       </section>
@@ -512,28 +512,29 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.5/tsparticles.min.js"></script>
+<script src="assets/js/app.js"></script>
 <script src="js/app.js"></script>
 <!-- Litho imports -->
 
-<!-- <script src="js/vendors/three.min.js"></script> -->
+<script src="js/vendors/three.min.js"></script>
 <script src="js/vendors/TweenMax.min.js"></script>
 <script src="js/demo.js"></script>
-<script>
-//     window.onload = function () {
-//         var loader = new THREE.TextureLoader()
-//         loader.crossOrigin = 'Anonymous'
-//         alert("01");
-        
-//         loader.load('imgs/starsPhoto3.jpeg', function (texture) {
-//             alert("02");
-//             document.body.classList.remove('loading')
-//             alert("03");
-//             window.tunnel = new Tunnel(texture)
-//             alert("04");
-//         })
-// }
-</script>
 <!-- <script>
+    window.onload = function () {
+        var loader = new THREE.TextureLoader()
+        loader.crossOrigin = 'Anonymous'
+        alert("01");
+        
+        loader.load('imgs/starsPhoto3.jpeg', function (texture) {
+            alert("02");
+            document.body.classList.remove('loading')
+            alert("03");
+            window.tunnel = new Tunnel(texture)
+            alert("04");
+        })
+}
+</script> -->
+<script>
    $( document ).ready(function() {
                          
             loader.crossOrigin = "Anonymous";
@@ -543,16 +544,16 @@
             time = 0,
             xmlhttp = new XMLHttpRequest(),
             result = 0;
-            alert("in-01");
+            // alert("in-01");
             
             xmlhttp.onreadystatechange = function(){
-                alert("in-02");
+               //  alert("in-02");
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
                     end = performance.now();
                     time =  (end - start)/1000;
                     result = (file_size/time/1000*8).toFixed(2);
                     $("#results").html(result+' MBit/s');
-                    alert("in-03");
+                  //   alert("in-03");
                     if(/Android|webOS|iPhone|IEMobile|Opera Mini/i.test(navigator.userAgent) && result < `${0.5}MBit/s`){
                         document.getElementById("animation-mobile").classList.remove("d-none");
                     }else{
@@ -570,7 +571,7 @@
                xmlhttp.open('GET', 'https://codepen.io/infomiho/pen/CuGJI.html', true);
                xmlhttp.send();
 });
-</script> -->
+</script>
 <script type="text/javascript">
    function isValidEmailAddress(email) {
       var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
@@ -689,7 +690,7 @@
 </script>
    
 
-<!-- <script src="js/tsparticles.js"></script> -->
+<script src="js/tsparticles.js"></script>
 
 <script>
    tsParticles.load("tsparticles", {
@@ -823,6 +824,9 @@ required: "Please enter number",
       entries.forEach(entry => {
          console.log(entry)
          const id = entry.target.childNodes[0].childNodes[1].id
+         // alert(id);
+         // return false;
+         if(id )
          if(entry.isIntersecting){
             const config = particleConfig[id]
             window.particleImageDisplay(config.className, config.color, config.image, `#${id}`);

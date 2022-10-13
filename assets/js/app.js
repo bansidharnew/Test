@@ -37,7 +37,6 @@ const tunnelObserver = new IntersectionObserver((entries) => {
 
 window.addEventListener('DOMContentLoaded', (event) => {
   tunnelObserver.observe(tunnelSection)
-  alert('01')
 })
 
 // document.addEventListener("DOMContentLoaded", function() {
@@ -101,6 +100,7 @@ setTimeout(() => {
   }, 2000);*/
 }, 15000)
 
+alert('01')
 jQuery(document).ready(function ($) {
   //alert(document.body.clientWidth);
 
@@ -160,20 +160,19 @@ jQuery(document).ready(function ($) {
 
 $(document.body).addClass('body-overflow')
 $(document).ready(function () {
-  alert('02')
   $('body').removeClass('body-overflow')
   // $(".valere").css("display", "none");
 })
-alert('03')
 setTimeout(function () {
+  alert('02')
   $('#ctn-preloader').addClass('loaded')
-  alert('04')
   // Una vez haya terminado el preloader aparezca el scroll
+  alert('03')
   $('body').removeClass('no-scroll-y')
+  alert('04')
 
-  alert('05')
   if ($('#ctn-preloader').hasClass('loaded')) {
-    alert('06')
+    alert('0')
     // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
     $('#preloader')
       .delay(1000)
@@ -181,9 +180,7 @@ setTimeout(function () {
         $(this).remove()
       })
   }
-  alert('06')
 }, 2000)
-alert('07')
 ;('use strict')
 // $(document).ready(function() {
 //   var $wrap = $(".wrapper"),
