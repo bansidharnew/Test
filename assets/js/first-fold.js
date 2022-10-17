@@ -33,6 +33,7 @@ function mapRange(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
 
+
 function distance(dot1, dot2) {
     let [x1, y1, x2, y2] = [dot1[0], dot1[1], dot2[0], dot2[1]];
     return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
