@@ -7,10 +7,10 @@ const welcomeTitle = document.querySelector('.welcome-title')
 const tunnelSection = document.querySelector('.tunnel-section')
 const secondSection = document.querySelector('.second-section')
 const secondSectionButton = document.querySelector(
-  '.second-section .second-section_button button',
+    '.second-section .second-section_button button',
 )
 const secondSectionDescription = document.querySelector(
-  '.second-section .second-section_description',
+    '.second-section .second-section_description',
 )
 
 //const removable = document.querySelector(".removable");
@@ -20,23 +20,23 @@ const secondSectionDescription = document.querySelector(
     condition is on line 96 */
 
 const tunnelObserverOptions = {
-  root: null,
-  threshold: 0,
-  rootMargin: '0px 0px 0px 0px',
+    root: null,
+    threshold: 0,
+    rootMargin: '0px 0px 0px 0px',
 }
 var runScroll = 'false'
 const tunnelObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      runScroll = true
-    } else {
-      runScroll = false
-    }
-  })
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            runScroll = true
+        } else {
+            runScroll = false
+        }
+    })
 }, tunnelObserverOptions)
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  tunnelObserver.observe(tunnelSection)
+    tunnelObserver.observe(tunnelSection)
 })
 
 // document.addEventListener("DOMContentLoaded", function() {
@@ -69,57 +69,57 @@ window.addEventListener('DOMContentLoaded', (event) => {
 // });
 
 setTimeout(() => {
-  tunnelSection.style.opacity = 1
+    tunnelSection.style.opacity = 1
 }, 1500)
 setTimeout(() => {
-  this.window.scrollTo(0, 0)
-}, 2500)
-/* Fade out welcome screen */
+        this.window.scrollTo(0, 0)
+    }, 2500)
+    /* Fade out welcome screen */
 
 setTimeout(() => {
-  welcomeScreen.style.opacity = 0
-  /* enable scroll after inital load */
-  $('body').removeClass('disable-scroll')
-  /* footer.js won't work if there are fixed elements, this way animation is always shown */
+    welcomeScreen.style.opacity = 0
+        /* enable scroll after inital load */
+    $('body').removeClass('disable-scroll')
+        /* footer.js won't work if there are fixed elements, this way animation is always shown */
 
-  setTimeout(() => {
-    /* remove whole element */
-    welcomeScreen.style.display = 'none'
-  }, 1850)
+    setTimeout(() => {
+        /* remove whole element */
+        welcomeScreen.style.display = 'none'
+    }, 1850)
 }, 3000)
 
 setTimeout(() => {
-  //tunnelSection.style.opacity = 0;
-  if (runScroll) {
-    jQuery.fn.fullpage.moveTo(2)
-  }
-  /*setTimeout(() => {
-    tunnelSection.style.display = "none";
-    removable.style.display = "none";
-    removable.remove();
-  }, 2000);*/
+    //tunnelSection.style.opacity = 0;
+    if (runScroll) {
+        jQuery.fn.fullpage.moveTo(2)
+    }
+    /*setTimeout(() => {
+      tunnelSection.style.display = "none";
+      removable.style.display = "none";
+      removable.remove();
+    }, 2000);*/
 }, 15000)
 
 // alert('01')
-jQuery(document).ready(function ($) {
-  //alert(document.body.clientWidth);
+jQuery(document).ready(function($) {
+    //alert(document.body.clientWidth);
 
-  var alterClass = function () {
-    var ww = document.body.clientWidth
+    var alterClass = function() {
+        var ww = document.body.clientWidth
 
-    if (ww <= 981) {
-      $('body').css('overflow', 'auto')
-      $('.active-panel').removeClass('wrapper')
-    } else if (ww > 981) {
-      $('body').css('overflow', 'hidden')
-      $('.active-panel').addClass('wrapper')
+        if (ww <= 981) {
+            $('body').css('overflow', 'auto')
+            $('.active-panel').removeClass('wrapper')
+        } else if (ww > 981) {
+            $('body').css('overflow', 'hidden')
+            $('.active-panel').addClass('wrapper')
+        }
     }
-  }
-  $(window).resize(function () {
+    $(window).resize(function() {
+            alterClass()
+        })
+        //Fire it when the page first loads:
     alterClass()
-  })
-  //Fire it when the page first loads:
-  alterClass()
 })
 
 // $( document ).ready(function() {
@@ -159,29 +159,29 @@ jQuery(document).ready(function ($) {
 // });
 
 $(document.body).addClass('body-overflow')
-$(document).ready(function () {
-  $('body').removeClass('body-overflow')
-  // $(".valere").css("display", "none");
+$(document).ready(function() {
+    $('body').removeClass('body-overflow')
+        // $(".valere").css("display", "none");
 })
-setTimeout(function () {
-  // alert('02')
-  $('#ctn-preloader').addClass('loaded')
-  // Una vez haya terminado el preloader aparezca el scroll
-  // alert('03')
-  $('body').removeClass('no-scroll-y')
-  // alert('04')
+setTimeout(function() {
+    // alert('02')
+    $('#ctn-preloader').addClass('loaded')
+        // Una vez haya terminado el preloader aparezca el scroll
+        // alert('03')
+    $('body').removeClass('no-scroll-y')
+        // alert('04')
 
-  if ($('#ctn-preloader').hasClass('loaded')) {
-    // alert('50')
-    // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
-    $('#preloader')
-      .delay(1000)
-      .queue(function () {
-        $(this).remove()
-      })
-  }
-}, 2000)
-;('use strict')
+    if ($('#ctn-preloader').hasClass('loaded')) {
+        // alert('50')
+        // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+        $('#preloader')
+            .delay(1000)
+            .queue(function() {
+                $(this).remove()
+            })
+    }
+}, 2000);
+('use strict')
 // $(document).ready(function() {
 //   var $wrap = $(".wrapper"),
 //       pages = $(".page").length,
@@ -288,12 +288,12 @@ setTimeout(function () {
 // });
 
 secondSectionButton.addEventListener('click', () => {
-  jQuery.fn.fullpage.moveSectionDown()
-  secondSectionButton.style.opacity = 0
-  secondSectionDescription.style.opacity = 0
+    jQuery.fn.fullpage.moveSectionDown()
+    secondSectionButton.style.opacity = 0
+    secondSectionDescription.style.opacity = 0
 
-  setTimeout(() => {
-    secondSectionButton.style.opacity = 1
-    secondSectionDescription.style.opacity = 1
-  }, 2000)
+    setTimeout(() => {
+        secondSectionButton.style.opacity = 1
+        secondSectionDescription.style.opacity = 1
+    }, 2000)
 })
