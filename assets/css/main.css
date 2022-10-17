@@ -2184,3 +2184,16 @@ width: 100vw;
     height: 100%;
     /* height: 100vh; */
 }
+.banner-title {
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        color: #fff;
+        font-size: 43px;
+        font-family: sans-serif;
+        letter-spacing: 4px;
+        line-height: 1.5;
+        text-align: center;
+      }
