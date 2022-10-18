@@ -1134,7 +1134,7 @@ h1.fadeInInitial span:nth-of-type(5) {
     z-index: 2;
     color: white;
     margin: 0px;
-    font-size: 2.2©©em !important;
+    font-size: 2.e2m !important;
     font-weight: 200 !important;
 }
 
@@ -2640,25 +2640,26 @@ i.fab.fa-apple {
     outline: none;
     opacity: 1;
     transition: transform 0.1s cubic-bezier(0.09, 0.95, 0.14, 1.25), opacity 0.1s cubic-bezier(0.09, 0.95, 0.14, 1.25);
-    &:before {
-        content: attr(data-on);
-    }
-    
-    &.off {
-        opacity: 0.3;
-        transform: translate(-2px, 2px);
-        &:before {
-            content: attr(data-off);
-        }
-    }
-    
-    &:hover {
-        color: rgba(225, 205, 255, 0;
-    }
-}
-button {
+  }
+  #ui-button:before {
+    content: attr(data-on);
+  }
+  #ui-button.off {
+    opacity: 0.3;
+    transform: translate(-2px, 2px);
+  }
+  #ui-button.off:before {
+    content: attr(data-off);
+  }
+  #ui-button:hover {
+    color: rgba(225, 205, 255, 0.6);
+  }
+  
+  button {
     font-size: 1em;
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-        font-size: 2em;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    button {
+      font-size: 2em;
     }
-}
+  }
