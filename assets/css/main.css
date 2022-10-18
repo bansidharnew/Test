@@ -2614,6 +2614,8 @@ i.fab.fa-apple {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
     background: rgb(5, 0, 20);
     user-select: none;
 }
