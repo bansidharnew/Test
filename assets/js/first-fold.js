@@ -93,7 +93,8 @@ class Star {
         this.py = this.y;
         this.pz = this.z;
         // purple, green, and blue, but randomized ^.^
-        this.color = `rgb(${randRange(110, 200)},${randRange(110, 240)},${randRange(230, 255)})`;
+        this.color = `rgb(${randRange(255, 255)},${randRange(255, 255)},${randRange(255, 255)})`;
+        // this.color = `rgb(${randRange(110, 200)},${randRange(110, 240)},${randRange(230, 255)})`;
     }
     resetX() {
         let [size, _] = this.container;
